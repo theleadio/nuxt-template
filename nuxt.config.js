@@ -1,5 +1,4 @@
 var config = require('./settings.js');
-console.log(config);
 
 export default {
   mode: 'universal',
