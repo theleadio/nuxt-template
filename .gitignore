@@ -1,4 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
+# modified by Dr. Lau Cher Han - https://www.thelead.io to fit our template
+
 ### Node template
 # Logs
 /logs
@@ -88,3 +90,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# lead specific settings
+settings.js
