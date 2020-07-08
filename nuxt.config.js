@@ -1,6 +1,3 @@
-var config = require('./settings.js');
-console.log(config);
-
 export default {
   mode: 'universal',
   /*
@@ -42,26 +39,7 @@ export default {
   ** Nuxt.js modules
   */
  modules: [
-    '@nuxtjs/axios',
-    [
-      '@nuxtjs/firebase',
-      {
-        config: {
-          apiKey: config.firebase.apiKey,
-          authDomain: config.firebase.authDomain,
-          databaseURL: config.firebase.databaseURL,
-          projectId: config.firebase.projectId,
-          storageBucket: config.firebase.storageBucket,
-          messagingSenderId: config.firebase.messagingSenderId,
-          appId: config.firebase.appId,
-          measurementId: config.firebase.measurementId
-        },
-        services: {
-          auth: true, // Just as example. Can be any other service
-          firestore: true
-        }
-      }
-    ]
+    '@nuxtjs/axios'
   ],
 
   axios: {
