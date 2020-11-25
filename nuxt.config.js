@@ -50,6 +50,11 @@ export default {
   axios: {
     // proxyHeaders: false
   },
+  // Tailwindcss Configuration
+  tailwindcss:{
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config.js',
+  },
   /*
   ** Build configuration
   */
