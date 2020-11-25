@@ -23,6 +23,8 @@ module.exports = {
       },
       colors:{
         'lead-yellow': '#f5c305f7',
+        'grayish-white-1': '#eeeff1',
+        'grayish-white-2': '#f5f7f9'
       },
     }
   },
