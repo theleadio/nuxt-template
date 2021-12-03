@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    background: #dcdcdc;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: block;
+}
+.mobile-nav-active #header{
+    left: 0;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    padding: 0 10px;
+    background: #040b14;
+    overflow-y: auto;
+
+}
+#header .profile img{
+    margin: 15px auto;
+    width: 120px;
+    display: block;
+    border: 8px solid #2c2f3f;
+    vertical-align: middle;
+    
+}
+#header .profile .rounded-circle{
+    border-radius: 50%!important;
+}
+#header .profile .img-fluid{
+       max-width: 100%;
+       height: auto;
+}
+#header .profile h1{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+    
+}
+#header .profile .text-light{
+    color: #f8f9fa!important;
+}
+#header .profile .social-links a{
+    padding: 8px 0;
+    font-size: 20px;
+    color: #fff;
+    background: #212431;
+    width: 36px;
+    height: 36px;
+}
