@@ -166,38 +166,12 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 26px;
       font-family: "Poppins", sans-serif ;
   }
-  #bgcover .bgcover-container p .doit{
-      z-index: 3;
-    margin-left: 700px;
-     width: 100px;
-     height: 30px;
-     border: 2px solid green;
-     background: yellow;
-  }
-  #bgcover .bgcover-container p .doit span{
+  #bgcover p span{
       color: #fff;
-      font-size: 34px;
       padding-bottom: 4px;
       letter-spacing: 1px;
-      border-bottom: 3px solid #149ddd;
-     
+      border-bottom: 3px solid blue;
   }
- div.text-transition{
-       background: chartreuse;
-       margin-left: 700px;
-       overflow-x: hidden;
-       width: 10px;
-       height: 60px;
-       border: 3px solid gold;
-       white-space: nowrap;
-       transition: width 2s;
-  }
-  #t-effect{
-      transition-timing-function: ease-in-out;
-  }
- .text-transition:hover, .text-transition:focus{
-     width: 600px;
- }
 
  @media (min-width: 1024px) {
     #bgcover {
@@ -303,3 +277,81 @@ h1, h2, h3, h4, h5, h6 {
    /*--------------------------------------------------------------
   # Facts
   --------------------------------------------------------------*/
+
+
+
+
+
+  /*--------------------------------------------------------------
+  # Resume
+  --------------------------------------------------------------*/ 
+  .resume .resume-title{
+       font-size: 26px;
+       font-weight: 700;
+       margin: 20px 0px;
+       color: #050d18;
+  }
+  .resume .resume-item{
+      padding: 0 0 20px 20px;
+      margin-top: -2px;
+      border-left: 2px solid #1f5297;
+      position: relative;
+    }
+    .resume .resume-item h4{
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: #050d18;
+        margin-bottom: 10px;
+    }
+    .resume .resume-item h5{
+        font-size: 16px;
+        background: #e4edf9;
+        padding: 5px 15px;
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .resume .resume-item ul{
+        padding-left: 20px;
+    }
+    .resume .resume-item ul li{
+        padding-bottom: 10px;
+    }
+    .resume .resume-item:last-child{
+        padding-bottom: 0px;
+    }
+    .resume .resume-item::before{
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        left: -9px;
+        top: 0;
+        background: #fff;
+        border: 2px solid #1f5297;
+    }
+    
+     /*--------------------------------------------------------------
+            # Services
+  --------------------------------------------------------------*/ 
+    
+  .services .icon-box {
+    margin-bottom: 20px;
+  }
+  
+  .services .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.5s;
+   
+  }
