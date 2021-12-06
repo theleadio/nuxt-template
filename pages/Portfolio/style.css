@@ -1,19 +1,37 @@
+/* ---------------------
+            #GENRAL
+   ---------------------*/
+
 body{
     margin: 0;
-    background: #dcdcdc;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+    
 }
 a{
     text-decoration: none;
+    color: #149ddd;
 }
-header{
-    display: block;
+a:hover{
+    text-decoration: none;
+    color: #149ddd;
 }
-.mobile-nav-active #header{
-    left: 0;
-}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
+/*--------------------------------------------------------------
+            #### Back to top button ####
+  --------------------------------------------------------------*/
+
+
+
+
+
+ /*--------------------------------------------------------------
+                    ### Header ###
+  --------------------------------------------------------------*/
+
 #header{
     position: fixed;
     top: 0;
@@ -21,44 +39,267 @@ header{
     bottom: 0;
     width: 300px;
     transition: all ease-in-out 0.5s;
-    padding: 0 10px;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
     background: #040b14;
     overflow-y: auto;
 
 }
 #header .profile img{
     margin: 15px auto;
-    width: 120px;
     display: block;
+    width: 120px;
     border: 8px solid #2c2f3f;
-    vertical-align: middle;
     
 }
-#header .profile .rounded-circle{
-    border-radius: 50%!important;
-}
-#header .profile .img-fluid{
-       max-width: 100%;
-       height: auto;
-}
+
 #header .profile h1{
-    font-size: 14px;
+    font-size: 24px;
     margin: 0;
     padding: 0;
     font-weight: 600;
+    -moz-text-align-last: center;
     text-align-last: center;
     font-family: "Poppins", sans-serif;
-    line-height: 1.2;
-    
 }
-#header .profile .text-light{
-    color: #f8f9fa!important;
-}
-#header .profile .social-links a{
-    padding: 8px 0;
-    font-size: 20px;
+#header .profile h1 a, #header .profile h1 a:hover{
     color: #fff;
-    background: #212431;
-    width: 36px;
-    height: 36px;
+    text-decoration: none;
 }
+
+#header .profile .social-links a{
+    font-size: 15px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0px;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+#header .profile .social-links a:hover{
+    background: #149ddd;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /* Desktop Navigation */
+
+  .nav-menu{
+      padding: 30px 0 0 0;
+  }
+  .nav-menu *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+  }
+  .nav-menu > ul > li{
+      position: relative;
+      white-space: nowrap;
+  }
+  .nav-menu a, .nav-menu a:focus{
+      display: flex;
+      align-items: center;
+      color: #a8a9b4;
+      padding: 12px 15px;
+      margin-bottom: 8px;
+      transition: 0.3s;
+      font-size: 15px;
+  }
+  .nav-menu a i, .nav-menu a:focus i{
+        font-size: 24px;
+        padding-right: 8px;
+        color: #6f7180;
+  }
+  .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover a {
+    text-decoration: none;
+    color: #fff;
+
+  }
+  .nav-menu li:hover i, .nav-menu .active i, .nav-menu .active i:focus, .nav-menu li:hover a > i{
+    color: #149ddd;
+  }
+
+  /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+
+  #bgcover{
+      width: 100%;
+      height: 100vh;
+      background: url("img/Kakashi/kh_3.jpg") top center;
+      background-size: cover;
+  }
+  #bgcover::before{
+       content: "";
+       background: rgba(5, 13, 24, 0.3);
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       right: 0;
+       left: 0;
+       z-index: 1;
+  }
+  #bgcover .bgcover-container{
+      position: relative;
+      z-index: 2;
+      min-width: 300px;
+  }
+  #bgcover h1{
+      margin: 0 0 10px 0;
+      font-size: 64px;
+      color: #fff;
+      font-weight: 700;
+      line-height: 56px;
+  }
+  #bgcover p{
+      color: #fff;
+      margin-bottom: 50px;
+      font-size: 26px;
+      font-family: "Poppins", sans-serif ;
+  }
+  #bgcover .bgcover-container p .doit{
+      z-index: 3;
+    margin-left: 700px;
+     width: 100px;
+     height: 30px;
+     border: 2px solid green;
+     background: yellow;
+  }
+  #bgcover .bgcover-container p .doit span{
+      color: #fff;
+      font-size: 34px;
+      padding-bottom: 4px;
+      letter-spacing: 1px;
+      border-bottom: 3px solid #149ddd;
+     
+  }
+ div.text-transition{
+       background: chartreuse;
+       margin-left: 700px;
+       overflow-x: hidden;
+       width: 10px;
+       height: 60px;
+       border: 3px solid gold;
+       white-space: nowrap;
+       transition: width 2s;
+  }
+  #t-effect{
+      transition-timing-function: ease-in-out;
+  }
+ .text-transition:hover, .text-transition:focus{
+     width: 600px;
+ }
+
+ @media (min-width: 1024px) {
+    #bgcover {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #bgcover h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    #bgcover h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  /*--------------------------------------------------------------
+  # main General
+  --------------------------------------------------------------*/
+    main{
+        margin-left: 300px;
+    }
+   
+   @media (max-width: 1199px){
+      #header{
+          left: -300px;
+      }
+      main{
+          margin-left: 0;
+      }
+   }
+
+
+
+ /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section{
+      padding: 60px 0;
+      overflow: hidden;
+      margin-left: 10px;
+    
+  }
+  
+  .section-title h2{
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    color: #173b6c;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+ }
+ .section-title h2::after{
+     content: "";
+     position: absolute;
+     display: block;
+     width: 50px;
+     height: 3px;
+     background: #149ddd;
+     bottom: 0;
+     left: 0;
+ }
+ .section-title p{
+     padding-bottom: 0px;
+ }
+
+
+
+/*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/ 
+   .about .content h3{
+         font-weight: 700;
+         color: #173b6c;
+         font-size: 26px;
+   }
+   .about .content ul{
+      list-style: none;
+      padding: 0;
+   }
+   .about .content ul li{
+       margin-bottom: 20px;
+       display: flex;
+       align-items: center;
+   }
+   .about .content ul strong{
+       margin-right: 10px;
+   }
+   .about .content ul i{
+       font-size: 16px;
+       color: #149ddd;
+       margin-right: 5px;
+       line-height: 0;
+
+   }
+   
+   .about .content p:last-child{
+        margin-bottom: 0;
+   }
+  
+   /*--------------------------------------------------------------
+  # Facts
+  --------------------------------------------------------------*/
