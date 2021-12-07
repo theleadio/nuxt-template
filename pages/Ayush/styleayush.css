@@ -213,7 +213,7 @@ body {
   #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/hero-bg.jpg") top center;
+    background: url("https://ayushporwal18.herokuapp.com/static/assets/img/hero-bg.jpg") top center;
     background-size: cover;
   }
   

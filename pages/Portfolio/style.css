@@ -3,7 +3,7 @@
    ---------------------*/
 
 body{
-    margin: 0;
+
     font-family: "Open Sans", sans-serif;
     color: #272829;
     
@@ -193,15 +193,15 @@ h1, h2, h3, h4, h5, h6 {
   /*--------------------------------------------------------------
   # main General
   --------------------------------------------------------------*/
-    main{
-        margin-left: 300px;
+    #main{
+        margin-left: 310px;
     }
    
    @media (max-width: 1199px){
       #header{
           left: -300px;
       }
-      main{
+      #main{
           margin-left: 0;
       }
    }
@@ -214,9 +214,7 @@ h1, h2, h3, h4, h5, h6 {
   section{
       padding: 60px 0;
       overflow: hidden;
-      margin-left: 10px;
-    
-  }
+ }
   
   .section-title h2{
     font-size: 32px;
@@ -245,7 +243,11 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
   # About
   --------------------------------------------------------------*/ 
-   .about .content h3{
+  #about .row .ab-image{
+      width: 255px;
+      height: ;
+  }
+  .about .content h3{
          font-weight: 700;
          color: #173b6c;
          font-size: 26px;
@@ -279,8 +281,38 @@ h1, h2, h3, h4, h5, h6 {
   --------------------------------------------------------------*/
 
 
-
-
+  /*--------------------------------------------------------------
+  # Skills
+  --------------------------------------------------------------*/
+  .skills .progress{
+      height: 60px;
+      display: block;
+      background: none;
+      border-radius: 0;
+  }
+  .skills .progress .skill{
+      padding: 0;
+      margin: 0 0 6px 0;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      color: #050d18;
+  }
+  .skills .progress .skill .val{
+      float: right;
+      font-style: normal;
+  }
+  .skills .progress-bar-wrap{
+      background: #dce8f8;
+      height: 10px;
+  }
+  .skills .progress-bar{
+      width: 1px;
+      height: 10px;
+      transition: .9s;
+      background-color: #149ddd;
+  }
 
   /*--------------------------------------------------------------
   # Resume
@@ -339,19 +371,82 @@ h1, h2, h3, h4, h5, h6 {
             # Services
   --------------------------------------------------------------*/ 
     
-  .services .icon-box {
-    margin-bottom: 20px;
+  .icon-box{
+      margin-bottom: 20px;
   }
-  
-  .services .icon {
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 54px;
-    height: 54px;
-    background: white;
-    border-radius: 50%;
-    transition: 0.5s;
-   
+  .icon-box .icon{
+      width: 54px;
+      height: 54px;
+      display: flex;
+      float: left;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-radius: 50%;
+      transition: 4s;
+      border: 2px solid black;
   }
+  .services .icon-box .title{
+      font-size: 18px;
+      font-weight: 700;
+      margin-left: 80px;
+      margin-bottom: 15px;
+  }
+  .services .icon-box .description a{
+       color: #149ddd;
+  }
+  .services .icon-box .description a:hover{
+       color: #343a40;
+  }
+  .services .icon-box .description{
+      margin-left: 80px;
+      line-height: 24px;
+      font-size: 14px;
+  }
+
+  /*--------------------------------------------------------------
+            # Contact
+  --------------------------------------------------------------*/ 
+    .contact{
+        padding-bottom: 130px;
+    }
+    .contact .info{
+        padding: 30px;
+        background: #fff;
+        width: 100%;
+        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    }
+    .contact .info i{
+        font-size: 20px;
+        color: #149ddd;
+        float: left;
+        width: 44px;
+        height: 44px;
+        background: #dff3fc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+
+    }
+    .contact .info h4{
+        padding: 0 0 0 60px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #050d18;
+    }
+    .contact .info p{
+        padding: 0 0 10px 60px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #173b6c;
+    }
+    .contact .info .email .p{
+        padding-top: 5px;
+    }
+    .contact .info .address:hover i, .contact .info .email:hover i, .contact .info .phone:hover i{
+        background: #149ddd;
+        color: #fff;
+    }

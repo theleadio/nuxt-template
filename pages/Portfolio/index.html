@@ -12,24 +12,18 @@
      <!-- Favicons -->
      <link href="img/yin-yang.svg" rel="icon">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
      
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-
      <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     
      <!-----------Vendor Css File----------->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    
-     <link href="/static/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://ayushporwal18.herokuapp.com/static/assets/vendor/aos/aos.cssn" rel="stylesheet">
+     <link href="https://ayushporwal18.herokuapp.com/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://ayushporwal18.herokuapp.com/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+     <link href="https://ayushporwal18.herokuapp.com/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+     <link href="https://ayushporwal18.herokuapp.com/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+     <link href="https://ayushporwal18.herokuapp.com/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
      <!------ Template Main CSS File-->
     <link rel="stylesheet" href="style.css">
@@ -93,6 +87,7 @@
     
 </section> <!--------- End Hero section------->
 
+<!------- ============= MAIN ====================-->
 <main id="main" class="main">
    
    <!---======= About Section=======-->
@@ -106,8 +101,8 @@
            </div>
 
            <div class="row">
-               <div class="col-lg-3" data-aos="fade-right">
-                  <img src="img/Kakashi/kakashidp.png" alt="" class="img-fluid">
+               <div class="col-lg-3 ab-image" data-aos="fade-right">
+                  <img src="img/Kakashi/kakashidp.png" class="img-fluid img-thumbnail" alt="">
                </div>
           
                <div class="col-lg-8 content" data-aos="fade-left">
@@ -136,34 +131,71 @@
            </div>
        </div>
   
-    </section>
+    </section> <!--------End About---------->
 
     <!---======= Skill Section=======-->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills section-bg">
         <div class="container">
             <div class="row skills-content">
                
                 <div class="col-lg-6" data-aos="fade-up">
                     <div class="progress">
-                        <span>C &amp; C++</span>
+                        <span class="skill">C & C++ <i class="val">95%</i></span>
                         <div class="progress-bar-wrap">
-
+                              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
-                </div>
+                    <div class="progress">
+                        <span class="skill">HTML, CSS & BOOTSTRAP<i class="val">70%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">PYTHON <i class="val">60%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                       </div>
+                   </div>
+                   <div class="progress">
+                        <span class="skill">GIT and github <i class="val">60%</i></span>
+                        <div class="progress-bar-wrap">
+                           <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                   </div>
+                </div>   
+
                 <div class="col-lg-6">
-
+                    <div class="progress">
+                        <span class="skill">Problem Solving<i class="val">75%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Django and django rest framework<i class="val">60%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Rest api<i class="val">60%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Java scripts <i class="val">50%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
                 </div>
-
-
-
-
-
 
             </div>
         </div>
-    </section>
+    </section>  <!-----------End Skills------------->
 
     <!---======= Resume Section=======-->
    <section id="resume" class="resume">
@@ -181,8 +213,8 @@
                       <h4>Kakashi Hatake</h4>
                       <p><em>An IT Undergraduate Student</em></p>
                       <ul>
-                          <li><p>Raipur, India</p></li>
-                          <li><p>4949494949</p></li>
+                          <li><p>Hassan, India</p></li>
+                          <li><p>6267078431</p></li>
                           <li><p>kakashihatakesh6@gmail.com</p></li>
                       </ul>
                    </div>
@@ -233,24 +265,52 @@
         </div>
        
      </div>   
- </section>
+ </section> <!-----------End Resume--------------->
   
   <!---======= Services Section =======-->
   <section id="services" class="services">
-      <div class="container">
+      <div class="conatainer">
 
-         <div class="section-title">
-             <h2>Competitive Programming Links</h2>
-         </div>
+           <div class="section-title">
+               <h2>Competitive Programming Links</h2>
+           </div>
 
-         <div class="row">
-             <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-                 <div class="icon"><img src="img/codelink_1.png" alt="" class="img-fluid"></div>
-                 <h4 class="title">Codeforces</h4>
-                 <p class="description"><a href="">Profile Link</a></p>
-             </div>
-         </div>
-          
+           <div class="row">
+               <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-in">
+                   <div class="icon"><img src="img/codelink_1.png" alt="" class="img-fluid"></div>
+                   <h4 class="title">Codeforces</h4>
+                   <p class="description"><a href="https://codeforces.com/profile/kakashish6">Profile Link</a></p>
+               </div>
+            
+               <div class="col-lg-4 col-md-6 icon-box">
+                   <div class="icon"><img src="img/codelink_2.png" alt="" class="img-fluid"></div>
+                   <h4 class="title">Hacker Rank</h4>
+                   <p class="description"><a href="https://www.hackerrank.com/kakashihatakesh6">Profile Link</a></p>
+               </div>
+               
+               <div class="col-lg-4 col-md-6 icon-box">
+                   <div class="icon"><img src="img/codelink_3.png" alt="" class="img-fluid"></div>
+                   <h4 class="title">Leetcode</h4>
+                   <p class="description"><a href="https://leetcode.com/kakashish6/">Profile Link</a></p>
+               </div>
+               
+               <div class="col-lg-4 col-md-6 icon-box">
+                   <div class="icon"><img src="img/codelink_4.png" alt="" class="img-fluid"></div>
+                   <h4 class="title">Codechef</h4>
+                   <p class="description"><a href="https://www.codechef.com/users/kakashish6">Profile Link</a></p>
+               </div>
+             
+               <div class="col-lg-4 col-md-6 icon-box">
+                   <div class="icon"><img src="img/codelink_5.png" alt="" class="img-fluid"></div>
+                   <h4 class="title">Geeks For Geeks</h4>
+                   <p class="description"><a href="https://auth.geeksforgeeks.org/user/kakashihatakesh6/profile">Profile Link</a></p>
+               </div>
+     
+               <div class="col-lg-4 col-md-6 icon-box">
+                   <div class="icon"><img src="img/codelink_6.png" alt="" class="img-fluid"></div>
+                   <h4 class="title">Stop Stalk</h4>
+                   <p class="description"><a href="https://www.stopstalk.com/user/profile/itskakashi">Profile Link</a></p>
+               </div>
 
 
 
@@ -259,20 +319,87 @@
 
 
 
+          </div>
 
 
-
-
+      </div>
 
      </div>
-  </section>
+  </section>  <!-----------End Services------------>
+
+  <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+            
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="row" data-aos="fade-in">
+               
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="info">
+                      <br>
+                      <br>
+                      <div class="address">
+                         <i class="bi bi-geo"></i>
+                         <h4>Location:</h4>
+                         <p>199/4,Surya Nagar,Hassan,Karnataka,India (383432)</p>
+                      </div>
+                      <br/>
+                      <div class="email">
+                         <i class="bi bi-envelope"></i>
+                         <h4>Email:</h4>
+                         <p>kakashihatakesh6@gmail.com</p>
+                      </div>
+                      <br/>
+                      <div class="phone">
+                        <i class="bi bi-phone"></i>
+                        <h4>Call:</h4>
+                        <p>+91 9557251845</p>
+                      </div>
+                 
+                    </div> 
+                </div>
+
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                    <form action="" method="POST">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Email</label>
+                                <input type="email" name="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                             <label for="subject">Subject</label>
+                             <input type="subject" name="subject" class="form-control" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" name="message" rows="10" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-secondary" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                     
+
+                </div>
+            
+            </div>
+
+        </div>
+    </section> <!------End Contact-------->
 
 
 
 
-
-</main>
-
+</main> <!----------- End Of Main --------------->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 
 <!--typedjs file-->
@@ -281,20 +408,21 @@
 <script src="main.js"></script>
 
  <!-- Vendor JS Files -->
- <script src="/static/assets/vendor/aos/aos.js"></script>
- <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
- <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
- <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
- <script src="/static/assets/vendor/php-email-form/validate.js"></script>
- <script src="/static/assets/vendor/purecounter/purecounter.js"></script>
- <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
- <script src="/static/assets/vendor/typed.js/typed.min.js"></script>
- <script src="/static/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://ayushporwal18.herokuapp.com/static/assets/vendor/aos/aos.js"></script>
+  <script src="https://ayushporwal18.herokuapp.com/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ayushporwal18.herokuapp.com/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://ayushporwal18.herokuapp.com/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/static/assets/vendor/purecounter/purecounter.js"></script>
+  <script src="https://ayushporwal18.herokuapp.com/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://ayushporwal18.herokuapp.com/static/assets/vendor/typed.js/typed.min.js"></script>
+  <script src="/static/assets/vendor/waypoints/noframework.waypoints.js"></script>
  <!-- Template Main JS File -->
- <script src="/static/assets/js/main.js"></script>
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 
   
 
