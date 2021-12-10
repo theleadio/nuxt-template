@@ -23,10 +23,31 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
             #### Back to top button ####
   --------------------------------------------------------------*/
-
-
-
-
+  .back-to-top{
+      right: 15px;
+      bottom: 15px;
+      width: 50px;
+      height: 50px;
+      opacity: 1;
+      z-index: 996;
+      background: #149ddd;
+      border-radius: 50%;
+      visibility: hidden;
+      position: fixed;
+  }
+  .back-to-top i{
+      font-size: 30px;
+      color: #fff;
+      line-height: 0;
+  }
+  .back-to-top:hover{
+      background: #2eafec;
+      color: #fff;
+  }
+  .back-to-top.active {
+      visibility: visible;
+      opacity: 1;
+    }
 
  /*--------------------------------------------------------------
                     ### Header ###
@@ -129,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   /*--------------------------------------------------------------
-  # Hero Section
+  # bgcover Section
   --------------------------------------------------------------*/
 
   #bgcover{
