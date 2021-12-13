@@ -17,8 +17,10 @@
      <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     
-     <!-----------Vendor Css File----------->
-     <link href="https://ayushporwal18.herokuapp.com/static/assets/vendor/aos/aos.cssn" rel="stylesheet">
+     <!--Aos Css Files -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-----------Vendor Css File----------->
      <link href="https://ayushporwal18.herokuapp.com/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
      <link href="https://ayushporwal18.herokuapp.com/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
      <link href="https://ayushporwal18.herokuapp.com/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -32,6 +34,10 @@
    
 </head>
 <body>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    
     <!---------------header---------------->
      <header id="header">
          <div class="d-flex flex-column">
@@ -40,7 +46,7 @@
                  <h1 class="text-light"><a href="index.html">Kakashi Hatake</a></h1>     
                  
                  <div class="social-links mt-3 text-center">
-                    <a href="https://github.com/KakshiHatakesh6" class="Github">
+                    <a href="https://github.com/kakashihatakesh6" class="Github">
                         <i class="bi bi-github"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/kakashi-hatake-749933227/" class="Linkedin">
@@ -83,19 +89,19 @@
     
     <div class="bgcover-container" data-aos="fade-in">
         <h1>Kakashi Hatake</h1>
-        <p>I'm <span class="typed" data-typed-items="Web Developer,Competitive Programmer"></span></p>
+        <p>I'm <span class="typed" data-typed-items="Web Developer,Competitive,Programmer,Python Developer"></span></p>
        <!-- <p>I'm <span class="typejs"></span></p> -->
     </div>
     
 </section> <!--------- End bgcover section------->
 
 <!------- ============= MAIN ====================-->
-<main id="main" class="main">
+<main id="main">
    
    <!---======= About Section=======-->
      <section id="about" class="about">
-      
         <div class="Container">
+
            <div class="section-title">
                 <h2>About</h2>
                 <p>An It undergraduate student at Manipur Institute Of Technology, Karnataka.</p>
@@ -104,10 +110,10 @@
 
            <div class="row">
                <div class="col-lg-3 ab-image" data-aos="fade-right">
-                  <img src="img/Kakashi/kakashidp.png" class="img-fluid img-thumbnail" alt="">
+                  <img src="img/Kakashi/kakashidp.png" class="img-fluid img-thumbnail border-width-3 border border-primary rounded" alt="">
                </div>
           
-               <div class="col-lg-8 content" data-aos="fade-left">
+               <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                    <h3>Competitive Programmmer &amp; Web Developer </h3>
                    <br>
                   
@@ -129,9 +135,10 @@
                           </ul>
                        </div>
                   </div>
-               </div>
+                </div>
            </div>
-       </div>
+
+        </div>
   
     </section> <!--------End About---------->
 
@@ -139,60 +146,63 @@
     <section id="skills" class="skills section-bg">
         <div class="container">
             <div class="row skills-content">
-               
-                <div class="col-lg-6" data-aos="fade-up">
-                    <div class="progress">
+
+                <div class="col-lg-6 pb" data-aos="fade-up">
+
+                    <div class="progress-bar-wrap">
                         <span class="skill">C & C++ <i class="val">95%</i></span>
-                        <div class="progress-bar-wrap">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 95%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="progress-bar-wrap">
+                        <span class="skill">HTML, CSS & BOOTSTRAP<i class="val">70%</i></span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-wrap">
+                        <span class="skill">Python<i class="val">60%</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <div class="progress-bar-wrap">
+                        <span class="skill">Git & Github<i class="val">60%</i></span>
+                        <div class="progress">
+                           <div class="progress-bar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                         </div>
                     </div>
 
-                    <div class="progress">
-                        <span class="skill">HTML, CSS & BOOTSTRAP<i class="val">70%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">PYTHON <i class="val">60%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                       </div>
-                   </div>
-                   <div class="progress">
-                        <span class="skill">GIT and github <i class="val">60%</i></span>
-                        <div class="progress-bar-wrap">
-                           <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                   </div>
                 </div>   
 
-                <div class="col-lg-6">
-                    <div class="progress">
-                        <span class="skill">Problem Solving<i class="val">75%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-lg-6 pb" data-aos="fade-down">
+
+                    <div class="progress-bar-wrap">
+                        <span class="skill">C & C++ <i class="val">95%</i></span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 95%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="progress-bar-wrap">
+                        <span class="skill">HTML, CSS & BOOTSTRAP<i class="val">70%</i></span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="progress">
-                        <span class="skill">Django and django rest framework<i class="val">60%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar-wrap">
+                        <span class="skill">Python<i class="val">60%</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                         </div>
                     </div>
-                    <div class="progress">
-                        <span class="skill">Rest api<i class="val">60%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar-wrap">
+                        <span class="skill">Git & Github<i class="val">60%</i></span>
+                        <div class="progress">
+                           <div class="progress-bar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                         </div>
                     </div>
-                    <div class="progress">
-                        <span class="skill">Java scripts <i class="val">50%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
+
                 </div>
 
             </div>
@@ -284,31 +294,31 @@
                    <p class="description"><a href="https://codeforces.com/profile/kakashish6">Profile Link</a></p>
                </div>
             
-               <div class="col-lg-4 col-md-6 icon-box">
+               <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-in">
                    <div class="icon"><img src="img/codelink_2.png" alt="" class="img-fluid"></div>
                    <h4 class="title">Hacker Rank</h4>
                    <p class="description"><a href="https://www.hackerrank.com/kakashihatakesh6">Profile Link</a></p>
                </div>
                
-               <div class="col-lg-4 col-md-6 icon-box">
+               <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-in">
                    <div class="icon"><img src="img/codelink_3.png" alt="" class="img-fluid"></div>
                    <h4 class="title">Leetcode</h4>
                    <p class="description"><a href="https://leetcode.com/kakashish6/">Profile Link</a></p>
                </div>
                
-               <div class="col-lg-4 col-md-6 icon-box">
+               <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-in">
                    <div class="icon"><img src="img/codelink_4.png" alt="" class="img-fluid"></div>
                    <h4 class="title">Codechef</h4>
                    <p class="description"><a href="https://www.codechef.com/users/kakashish6">Profile Link</a></p>
                </div>
              
-               <div class="col-lg-4 col-md-6 icon-box">
+               <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-in">
                    <div class="icon"><img src="img/codelink_5.png" alt="" class="img-fluid"></div>
                    <h4 class="title">Geeks For Geeks</h4>
                    <p class="description"><a href="https://auth.geeksforgeeks.org/user/kakashihatakesh6/profile">Profile Link</a></p>
                </div>
      
-               <div class="col-lg-4 col-md-6 icon-box">
+               <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-in">
                    <div class="icon"><img src="img/codelink_6.png" alt="" class="img-fluid"></div>
                    <h4 class="title">Stop Stalk</h4>
                    <p class="description"><a href="https://www.stopstalk.com/user/profile/itskakashi">Profile Link</a></p>
@@ -356,7 +366,7 @@
                     </div> 
                 </div>
 
-                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up">
                     <form action="" method="POST">
                         <div class="row">
                             <div class="form-group col-md-6">
@@ -389,7 +399,13 @@
         </div>
     </section> <!------End Contact-------->
 
-
+    <section id="footer">
+        <div class="container">
+            <div class="progress" style="width: 200px;">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+        </div>
+    </section>
 
 
 </main> <!----------- End Of Main --------------->
@@ -402,8 +418,16 @@
 <!--Main JS File -->
 <script src="main.js"></script>
 
+<!--Vendor Aos js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 300,
+        duration: 1000,
+    });
+</script>
+
  <!-- Vendor JS Files -->
-  <script src="https://ayushporwal18.herokuapp.com/static/assets/vendor/aos/aos.js"></script>
   <script src="https://ayushporwal18.herokuapp.com/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://ayushporwal18.herokuapp.com/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="https://ayushporwal18.herokuapp.com/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
