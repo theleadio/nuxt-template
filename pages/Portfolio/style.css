@@ -373,16 +373,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   --------------------------------------------------------------*/
-  .skills .skills-content{
-       display: flex;
-       flex-direction: row;
-  }
-  .skills-content .pb{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-  }
 
-  .skills .progress{
+  .skills .progress-bar-wrap .progress{
     height: 10px;
     width: 480px;
     
