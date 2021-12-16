@@ -35,15 +35,34 @@
  
    /**
     * Easy on scroll event listener 
+    * 
+    
+
+      
+
+
+
+
+
     */
-   const onscroll = (el, listener) => {
-     el.addEventListener('scroll', listener)
-   }
+  
+    const onscroll = (el, listener) => {
+      el.addEventListener('scroll', listener)
+    }
+  
  
+ 
+
+
+
+
+
    /**
     * Navbar links active state on scroll
-    */
-   let navbarlinks = select('#navbar .scrollto', true)
+    * 
+    * 
+
+    let navbarlinks = select('#navbar .scrollto', true)
    const navbarlinksActive = () => {
      let position = window.scrollY + 200
      navbarlinks.forEach(navbarlink => {
@@ -60,16 +79,34 @@
    window.addEventListener('load', navbarlinksActive)
    onscroll(document, navbarlinksActive)
  
+
+
+
+
+
+
+
+    */
+   
    /**
     * Scrolls to an element with header offset
-    */
-   const scrollto = (el) => {
+    
+
+       const scrollto = (el) => {
      let elementPos = select(el).offsetTop
      window.scrollTo({
        top: elementPos,
        behavior: 'smooth'
      })
    }
+
+
+
+
+
+
+    */
+   
  
    /**
     * Back to top button
@@ -97,9 +134,11 @@
    })
  
    /**
-    * Scrool with ofset on links with a class name .scrollto
-    */
-   on('click', '.scrollto', function(e) {
+    * Scroll with ofset on links with a class name .scrollto
+     
+     
+
+       on('click', '.scrollto', function(e) {
      if (select(this.hash)) {
        e.preventDefault()
  
@@ -113,6 +152,13 @@
        scrollto(this.hash)
      }
    }, true)
+
+
+
+
+
+    */
+   
  
    /**
     * Scroll with ofset on page load with hash links in the url
@@ -144,7 +190,7 @@
    /**
     * Skills animation
     */
-   let skilsContent = select('.skills-content');
+ /*  let skilsContent = select('.skills-content');
    if (skilsContent) {
      new Waypoint({
        element: skilsContent,
@@ -156,7 +202,7 @@
          });
        }
      })
-   }
+   }      */
  
    /**
     * Porfolio isotope and filter
@@ -254,3 +300,53 @@
    });
  
  })()
+
+ /**
+     * Animation Change on control
+     */
+
+    let sections = document.querySelectorAll('section');
+    let navLinks = document.querySelectorAll('header nav ul li');
+
+    window.addEventListener('myscroll', ()=>{
+      let current = '';
+      sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if(pageYOffset >= sectionTop){
+            current = section.getAttribute('id');
+          }
+
+      })
+
+      navLinks.forEach( li => {
+        li.classList.remove('active');
+        if(li.classList.contains(current)){
+          li.classList.add('active');
+
+        }
+      })
+    })
+
+
+    /*
+    window.onscroll = () =>{
+           
+          section.forEach(sec =>{
+             
+              let top = window.scrollY;
+              let offset = sec.offsetTop;
+              let height = sec.offsetHeight;
+              let id = sec.getAttribute('id');
+
+              if(top >= offset && top < offset + height){
+                navLinks.forEach(links =>{
+                    links.classList.remove(active);
+                    document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+                });
+              };
+          
+          
+          });
+    };
+    */

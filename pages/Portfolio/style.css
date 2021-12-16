@@ -1,12 +1,13 @@
 /* ---------------------
             #GENRAL
    ---------------------*/
-
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
-
     font-family: "Open Sans", sans-serif;
-    color: #272829;
-    
+    color: #272829;    
 }
 a{
     text-decoration: none;
@@ -373,25 +374,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   --------------------------------------------------------------*/
-
-  .skills .progress-bar-wrap .progress{
-    height: 10px;
-    width: 480px;
-    
+  #skills .row .progress-bw{
+      display: block;
   }
-  .skills .progress-bar-wrap .skill{
-    padding: 0;
-    margin: 0 0 6px 0;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #050d18;
-}
-   .skills .progress-bar-wrap .skill .val{
-    float: right;
-    font-style: normal;
-    }
+  #skills .container{
+      width: 100%;
+  }
+
   /*--------------------------------------------------------------
   # Resume
   --------------------------------------------------------------*/ 
@@ -530,3 +519,28 @@ h1, h2, h3, h4, h5, h6 {
         background: #149ddd;
         color: #fff;
     }
+
+/* ========= Footer ==============*/
+#footer{
+    padding: 0;
+}
+.footer-wrap{
+    position: relative;
+    background: #2c2f3f;
+    color: #149ddd;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#footer .info{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+#footer strong{
+    font-size: 16px;
+}
