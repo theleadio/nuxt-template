@@ -1,0 +1,546 @@
+/* ---------------------
+            #GENRAL
+   ---------------------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    color: #272829;    
+}
+a{
+    text-decoration: none;
+    color: #149ddd;
+}
+a:hover{
+    text-decoration: none;
+    color: #149ddd;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
+/*--------------------------------------------------------------
+            #### Back to top button ####
+  --------------------------------------------------------------*/
+  .back-to-top{
+      right: 15px;
+      bottom: 15px;
+      width: 50px;
+      height: 50px;
+      opacity: 1;
+      z-index: 996;
+      background: #149ddd;
+      border-radius: 50%;
+      visibility: hidden;
+      position: fixed;
+  }
+  .back-to-top i{
+      font-size: 30px;
+      color: #fff;
+      line-height: 0;
+  }
+  .back-to-top:hover{
+      background: #2eafec;
+      color: #fff;
+  }
+  .back-to-top.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+ /*--------------------------------------------------------------
+                    ### Header ###
+  --------------------------------------------------------------*/
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: #040b14;
+    overflow-y: auto;
+
+}
+#header .profile img{
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+    
+}
+
+#header .profile h1{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+}
+#header .profile h1 a, #header .profile h1 a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .profile .social-links a{
+    font-size: 15px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0px;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+#header .profile .social-links a:hover{
+    background: #149ddd;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /* Desktop Navigation */
+
+  .nav-menu{
+      padding: 30px 0 0 0;
+  }
+  .nav-menu *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+  }
+  .nav-menu > ul > li{
+      position: relative;
+      white-space: nowrap;
+  }
+  .nav-menu a, .nav-menu a:focus{
+      display: flex;
+      align-items: center;
+      color: #a8a9b4;
+      padding: 12px 15px;
+      margin-bottom: 8px;
+      transition: 0.3s;
+      font-size: 15px;
+  }
+  .nav-menu a i, .nav-menu a:focus i{
+        font-size: 24px;
+        padding-right: 8px;
+        color: #6f7180;
+  }
+  .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover a {
+    text-decoration: none;
+    color: #fff;
+
+  }
+  .nav-menu li:hover i, .nav-menu .active i, .nav-menu .active i:focus, .nav-menu li:hover a > i{
+    color: #149ddd;
+  }
+  
+  
+  /* Mobile Navigation */
+
+  .mobile-nav-toggle {
+      position: fixed;
+      right: 15px;
+      top: 15px;
+      z-index: 9998;
+      border: 0;
+      font-size: 24px;
+      background-color: #149ddd;
+      outline: none !important;
+      color: #fff;
+      transition: all 0.4s;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+   }
+   .mobile-nav-active{
+       overflow: hidden;
+   }
+   .mobile-nav-active #header{
+       left: 0;
+   }
+
+  /*--------------------------------------------------------------
+  # bgcover Section
+  --------------------------------------------------------------*/
+
+  #bgcover{
+      width: 100%;
+      height: 100vh;
+      background: url("img/Kakashi/kh_3.jpg") top center;
+      background-size: cover;
+  }
+  #bgcover::before{
+       content: "";
+       background: rgba(5, 13, 24, 0.3);
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       right: 0;
+       left: 0;
+       z-index: 1;
+  }
+  #bgcover .bgcover-container{
+      position: relative;
+      z-index: 2;
+      min-width: 300px;
+  }
+  #bgcover h1{
+      margin: 0 0 10px 0;
+      font-size: 64px;
+      color: #fff;
+      font-weight: 700;
+      line-height: 56px;
+  }
+  #bgcover p{
+      color: #fff;
+      margin-bottom: 50px;
+      font-size: 26px;
+      font-family: "Poppins", sans-serif ;
+  }
+  #bgcover p span{
+      color: #fff;
+      padding-bottom: 4px;
+      letter-spacing: 1px;
+      border-bottom: 3px solid blue;
+  }
+
+ @media (min-width: 1024px) {
+    #bgcover {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #bgcover h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    #bgcover h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 425px) {
+      #bgcover{
+          background: url("img/kk3.jpg") 425px 780px;
+          background-size: contain;
+      }
+  }
+  /*--------------------------------------------------------------
+  # main General
+  --------------------------------------------------------------*/
+    #main{
+        margin-left: 300px;
+    }
+   
+   @media (max-width: 1199px){
+      #header{
+          left: -300px;
+      }
+      #main{
+          margin-left: 0;
+      }
+   }
+
+
+
+ /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section{
+      padding: 60px 0px;
+      overflow: hidden;
+ }
+  .section-title{
+      padding-bottom: 30px;
+  }
+  
+  .section-title h2{
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    color: #173b6c;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+ }
+ .section-title h2::after{
+     content: "";
+     position: absolute;
+     display: block;
+     width: 50px;
+     height: 3px;
+     background: #149ddd;
+     bottom: 0;
+     left: 0;
+ }
+ .section-title p{
+     margin-bottom: 0;
+ }
+
+
+
+/*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/ 
+  .about{
+      padding-left: 16px;
+  }
+  .about .content h3{
+         font-weight: 700;
+         color: #173b6c;
+         font-size: 26px;
+   }
+   .about .content ul{
+      list-style: none;
+      padding: 0;
+   }
+   .about .content ul li{
+       margin-bottom: 20px;
+       display: flex;
+       align-items: center;
+   }
+   .about .content ul strong{
+       margin-right: 10px;
+   }
+   .about .content ul i{
+       font-size: 16px;
+       color: #149ddd;
+       margin-right: 5px;
+       line-height: 0;
+
+   }
+   
+   .about .content p:last-child{
+        margin-bottom: 0;
+   }
+  
+   /*--------------------------------------------------------------
+  # Facts
+  --------------------------------------------------------------*/
+
+
+  /*--------------------------------------------------------------
+  # Skills
+
+   .skills .progress{
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+  }
+  .skills .progress .skill{
+      padding: 0;
+      margin: 0 0 6px 0;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      color: #050d18;
+  }
+  .skills .progress .skill .val{
+      float: right;
+      font-style: normal;
+  }
+  .skills .progress-bar-wrap{
+      background: #dce8f8;
+      height: 10px;
+  }
+  .skills .progress-bar{
+      width: 1px;
+      height: 10px;
+      transition: .9s;
+      background-color: #149ddd;
+  }
+
+  --------------------------------------------------------------*/
+  #skills .row .progress-bw{
+      display: block;
+  }
+  #skills .container{
+      width: 100%;
+  }
+
+  /*--------------------------------------------------------------
+  # Resume
+  --------------------------------------------------------------*/ 
+  .resume .resume-title{
+       font-size: 26px;
+       font-weight: 700;
+       margin: 20px 0px;
+       color: #050d18;
+  }
+  .resume .resume-item{
+      padding: 0 0 20px 20px;
+      margin-top: -2px;
+      border-left: 2px solid #1f5297;
+      position: relative;
+    }
+    .resume .resume-item h4{
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: #050d18;
+        margin-bottom: 10px;
+    }
+    .resume .resume-item h5{
+        font-size: 16px;
+        background: #e4edf9;
+        padding: 5px 15px;
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .resume .resume-item ul{
+        padding-left: 20px;
+    }
+    .resume .resume-item ul li{
+        padding-bottom: 10px;
+    }
+    .resume .resume-item:last-child{
+        padding-bottom: 0px;
+    }
+    .resume .resume-item::before{
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        left: -9px;
+        top: 0;
+        background: #fff;
+        border: 2px solid #1f5297;
+    }
+    
+     /*--------------------------------------------------------------
+            # Services
+  --------------------------------------------------------------*/ 
+  .services{
+      padding-left: 16px;
+  }
+  .icon-box{
+      margin-bottom: 20px;
+  }
+  .icon-box .icon{
+      width: 54px;
+      height: 54px;
+      display: flex;
+      float: left;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-radius: 50%;
+      transition: 0.5s;
+     
+  }
+  .services .icon-box .title{
+      font-size: 18px;
+      font-weight: 700;
+      margin-left: 80px;
+      margin-bottom: 15px;
+  }
+  .services .icon-box .description a{
+       color: #1a78d6;
+  }
+  .services .icon-box .description a:hover{
+       color: #149ddd;
+  }
+  .services .icon-box .description{
+      margin-left: 80px;
+      line-height: 24px;
+      font-size: 14px;
+  }
+
+  /*--------------------------------------------------------------
+            # Contact
+  --------------------------------------------------------------*/ 
+    .contact{
+        padding-bottom: 130px;
+    }
+    .contact .info{
+        padding: 30px;
+        background: #fff;
+        width: 100%;
+        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    }
+    .contact .info i{
+        font-size: 20px;
+        color: #149ddd;
+        float: left;
+        width: 44px;
+        height: 44px;
+        background: #dff3fc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+
+    }
+    .contact .info h4{
+        padding: 0 0 0 60px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #050d18;
+    }
+    .contact .info p{
+        padding: 0 0 10px 60px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #173b6c;
+    }
+    .contact .info .email .p{
+        padding-top: 5px;
+    }
+    .contact .info .address:hover i, .contact .info .email:hover i, .contact .info .phone:hover i{
+        background: #149ddd;
+        color: #fff;
+    }
+
+/* ========= Footer ==============*/
+#footer{
+    padding: 0;
+}
+.footer-wrap{
+    position: relative;
+    background: #2c2f3f;
+    color: #149ddd;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#footer .info{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+#footer strong{
+    font-size: 16px;
+}

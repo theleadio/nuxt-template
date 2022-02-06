@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <title>{{title}}</title>
+        <style>
+            .main{
+                background: gray;
+                color: #fff;
+                width: 600px;
+                font-size: 40px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Poppins",sans-serif;
+            }
+            .para{
+                background: green;
+                color: #fff;
+                width: 800px;
+                font-size: 15px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            table, th, td {
+                border-collapse: collapse;
+                padding: 10px;
+                background-color: #96D4D4;
+
+              }
+              table{
+                  border: 2px solid black;
+              }
+              th, td {
+                border: 1px solid white;
+              }
+        </style>    
+    </head>
+    <body>
+        <h3>Welcome to Home Page</h3>
+        <div class="main">This is a style test</div>
+        <p class="para">{{pdata}}</p>
+
+        {% for n in clist %}
+        <div>{{forloop.counter0}} {{n}}</div>
+        {% endfor %}
+        
+        
+        <br>
+         <table>
+             <tr>
+                 <th>Name</th>
+                 <th>Phone Number</th>
+             </tr>
+             {% for d in student_details%}
+             <tr>
+                <td>{{d.name}}</td>
+                <td>{{d.phone}}</td>
+             </tr>
+               {% endfor %}
+         </table>
+         
+    </body>
+</html>

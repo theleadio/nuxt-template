@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home{
+    background: royalblue;
+}
+#about{
+    background: silver;
+}
+#skill{
+    background: rgb(59, 152, 228);
+}
+#resume{
+    background: teal;
+}
+#footer{
+    background: thistle;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+nav .container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+nav .container ul li{
+    display: inline-block;
+    list-style: none;
+}
+nav .container ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+nav .container ul li.active{
+    background-color: crimson;
+    transition: 0.3s ease background-color;
+    
+}
+nav .container ul li.active a{
+    color: #fff;
+}
